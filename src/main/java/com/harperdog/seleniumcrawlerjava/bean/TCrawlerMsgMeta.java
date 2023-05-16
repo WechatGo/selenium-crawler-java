@@ -15,7 +15,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-@TableName("t_crawler_msg_meta")
+@TableName("")
 @ApiModel("聊天内容抓取元数据")
 public class TCrawlerMsgMeta implements Serializable {
     /**
@@ -32,9 +32,9 @@ public class TCrawlerMsgMeta implements Serializable {
     /**
      * 抓取的信息发送到的直播间的环信房间id
      */
-    @ApiModelProperty("抓取的信息发送到的直播间的环信房间id")
-    @TableField("huan_xin_room_id")
-    private String huanxinRoomId;
+    @ApiModelProperty("")
+    @TableField("room_id")
+    private String roomId;
     /**
      * 抓取开始时间
      */
@@ -122,18 +122,18 @@ public class TCrawlerMsgMeta implements Serializable {
     private String remark;
 
     /**
-     * 品牌
+     *
      */
     private String brandCodes;
 
     /**
-     * 品牌描述
+     *
      */
     @TableField(exist = false)
     private String brandDesc;
 
     /**
-     * 环信账号标识
+     *
      */
     private String hxAccFlag;
 }

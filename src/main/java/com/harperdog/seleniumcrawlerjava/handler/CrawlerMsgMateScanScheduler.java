@@ -313,8 +313,8 @@ public class CrawlerMsgMateScanScheduler {
             crawlerMsgService.createWebDriver(currMmTask);
         }
 
-        if (StringUtils.isNotBlank(dbTask.getHuanxinRoomId())) {
-            currMmTask.setHuanxinRoomId(dbTask.getHuanxinRoomId());
+        if (StringUtils.isNotBlank(dbTask.getRoomId())) {
+            currMmTask.setRoomId(dbTask.getRoomId());
         }
 
         if (dbTask.getCrawlerStartTime() != null) {
